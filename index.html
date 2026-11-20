@@ -15,6 +15,7 @@
                 <li><a href="#hermandad">La hermandad</a></li>
                 <li><a href="#horarios">Horarios de partidas</a></li>
                 <li><a href="#eventos">Torneos y eventos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#visitanos">Visítanos</a></li>
             </ul>
         </nav>
@@ -99,6 +100,40 @@
                 <p>Elige tu bando y apúntate en tienda antes del viernes anterior.</p>
             </article>
             <p>Este tablón es informativo: no permite publicar mensajes ni reservar plazas en línea.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacta con la hermandad</h2>
+            <p id="aviso-formulario">Formulario de muestra para el proyecto académico.
+                No envía mensajes ni reserva mesas. Para la tienda ficticia, las inscripciones
+                se gestionarían en persona.</p>
+            <form action="#contacto" aria-describedby="aviso-formulario">
+                <fieldset>
+                    <legend>Consulta sobre partidas y actividades</legend>
+                    <p>
+                        <label for="nombre">Nombre o apodo:</label><br>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="asunto">Asunto:</label><br>
+                        <select id="asunto" name="asunto">
+                            <option value="iniciacion">Primera partida</option>
+                            <option value="mesa">Disponibilidad de mesas</option>
+                            <option value="torneo">Torneos y eventos</option>
+                            <option value="otro">Otra consulta</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensaje">Tu consulta:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea>
+                    </p>
+                    <button type="submit" disabled>Envío no disponible en esta demo</button>
+                </fieldset>
+            </form>
         </section>
 
         <section id="visitanos">
